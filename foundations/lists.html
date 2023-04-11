@@ -1,0 +1,63 @@
+<!-- For the best document going over all things list: https://learn.shayhowe.com/html-css/creating-lists/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning HTML: Lists</title>
+</head>
+<body>
+    <h2>How to create lists in HTML</h2>
+    <h3>Unordered lists, or "ul"</h3>
+    <ul>
+        <li>This is a list item, created using the "li" element.</li>
+        <li>"li" is used in both unordered and ordered lists.</li>
+        <li>Since it is unordered, each item begins with a bullet point.</li>
+    </ul>
+    <h3>Ordered lists, or "ol"</h3>
+    <ol>
+        <li>"li" is used in both unordered and ordered lists.</li>
+        <li>Since it is ordered, each item begins with a number.</li>
+    </ol>
+    <h3>Description lists, or "dl"</h3>
+    <dl>
+        <dt>"dt" is used for the main point...</dt>
+        <dd>followed by dd for its descriptions.</dd>
+    </dl>
+    <p>You could do some fun things with ordered lists, like start them at a certain number with the "start" attribute:</p>
+    <ol start="998">
+        <li>Started from the</li>
+        <li>bottom now we're</li>
+        <li>here?</li>
+    </ol>
+    <p>Change the value of list items with the "value" attribute:</p>
+    <ol>
+        <li>We've got a long way to go</li>
+        <li value="998">Maybe not?</li>
+        <li>Keep climbing...</li>
+        <li value="500">Uh-oh.</li>
+        <li value="2">Oof!</li>
+        <li>One step at a time.</li>
+    </ol>
+    <p>Or even reverse them with the "reversed" attribute:</p>
+    <ol reversed>
+        <li>But now we're going</li>
+        <li>back to the</li>
+        <li>bottom</li>
+        <li>:(</li>
+    </ol>
+    <p>You could nest lists within each other:</p>
+    <ol>
+        <li>Eat breakfast</li>
+        <li>
+            Go to the grocery and buy:
+            <ul>
+                <li>Milk</li>
+                <li>Bread</li>
+                <li>Cheese</li>
+            </ul>
+        </li>
+        <li>Make dinner</li>
+        <p><i>(Works for any combination of ul and ol.)</i></p>
+    </ol>
+</body>
+</html>
