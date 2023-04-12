@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning HTML: Links and Images</title>
+</head>
+
+<body>
+    <h2>Links</h2>
+    <a>This is an "a", or anchor element. It doesn't have any attributes, so it doesn't do anything.</a>
+    <p>By using the "href" attribute with an "a", I can link <a href="https://google.com">this</a> to Google. This is called an <em>absolute link</em>, a link to another website on the Internet that contains the protocol and domain of the destination.</p>
+    <p>Using a file path relative to the page you are creating the link on, you can create a <em>relative link</em>. For example, this link to our lesson on lists, <a href="lists.html">"lists.html"</a>. The full file path, <a href="html-foundations/lists.html">"html-foundations/lists.html"</a>, however, will not work, as it is relative to the current directory. However, <a href="../html-foundations/lists.html">"../html-foundations/lists.html"</a> brings us back to the parent directory, with "../" representing the parent directory. On the other hand, "./" represents the current directory, e.g. <a href="./lists.html">"./lists.html"</a>, though it's usually not necessary.</p>
+    <h2>Images</h2>
+    <p>Images are created with the "img" element. It's <strong>self-closing</strong> (no ending tag needed) and uses the "src" or source attribute for its image source.</p>
+    <p>Much like links, src accepts two types of links: absolute or relative. The src of the image below is an absolute link. (<a href="https://www.theodinproject.com/mstile-310x310.png">https://www.theodinproject.com/mstile-310x310.png</a>)</p>
+    <img src="https://www.theodinproject.com/mstile-310x310.png", alt="Odin Project logo">
+    <p>The src of the next image is a relative link, which uses the same file path rules discussed above.</p>
+    <img src="images/dog.jpg", alt="Charles the dog">
+    <p>The img element also has the "alt" attribute, which is used to describe an image in place of the image if it can't be loaded. It's also used by screen readers for visually impaired users. <em>Your img element should always have a src and alt attribute.</em></p>
+    <h2>Main Image Formats</h2>
+    <h3>JPEG/JPG - raster-based</h3>
+    <h4>Pros:</h4>
+    <ul>
+        <li>Universal browser support</li>
+        <li>Small file and email attachment size, fast loading</li>
+        <li>Supports displaying millions of colors</li>
+        <li>Best used for sharp, good quality photographs</li>
+    </ul>
+    <h4>Cons:</h4>
+    <ul>
+        <li>Does not support transparent backgrounds</li>
+        <li>Lossy image compression leads to low quality or poor text readability</li>
+        <li>Not to be used for computer-generated graphics</li>
+        <li>Must be saved with the correct size and resolution to avoid pixelation and image stretching</li>
+    </ul>
+    <h3>PNG - pixel-based</h3>
+    <h4>Pros:</h4>
+    <ul>
+        <li>Universal browser support</li>
+        <li>Supports transparency</li>
+        <li>Best used for graphical elements - logos, icons, simple illustrations</li>
+        <li>Lossless compression</li>
+        <li>Small file size with limited colors and rapid transitions between colors that remain sharp</li>
+    </ul>
+    <h4>Cons:</h4>
+    <ul>
+        <li>Large file size with millions of colors</li>
+        <li>Not ideal for printing - optimized for the screen</li>
+    </ul>
+    <h3>WebP</h3>
+    <h4>Pros:</h4>
+    <ul>
+        <li>Smaller file size for the same image quality (35% in comparison to JPEG, 50% to PNG)</li>
+        <li>Uses both lossy and lossless compression</li>
+        <li>Supports transparency</li>
+    </ul>
+    <h4>Cons</h4>
+    <ul>
+        <li>Not supported by all browsers, specifically Safari and Internet Explorer</li>
+        <li>Not supported by all CMS platforms</li>
+    </ul>
+    <h3>SVG - vector-based</h3>
+    <h4>Pros:</h4>
+    <ul>
+        <li>Universal browser support</li>
+        <li>Small file size</li>
+        <li>Loss-free scaling for basic shapes and text</li>
+        <li>Supported by illustration software</li>
+        <li>Supports transparency</li>
+        <li>Best used for logos, icons, and simple illustrations because of the sharp quality graphics</li>
+    </ul>
+    <h4>Cons:</h4>
+    <ul>
+        <li>Not an ideal format for images or complex drawings</li>
+        <li>Not supported by all CMS platforms, but there are workarounds</li>
+        <li>Not supported by some default image editors</li>
+    </ul>
+    <h3>GIF - animated image</h3>
+    <h4>Pros:</h4>
+    <ul>
+        <li>Animation support: used for small animations and low-resolution video clips</li>
+        <li>Universal browser support</li>
+        <li>Small file size</li>
+    </ul>
+    <h4>Cons:</h4>
+    <ul>
+        <li>Loss of quality of photographs</li>
+        <li>Limited colors due to 8-bit (PNG and JPG supports 24-bit)</li>
+        <li>Copyright issues</li>
+    </ul>
+</body>
+
+</html>
